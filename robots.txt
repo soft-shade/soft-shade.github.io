@@ -1,0 +1,17 @@
+# robots.txt for the whole soft-shade.github.io domain.
+#
+# Crawlers only read robots.txt from a domain root, which is why this
+# lives here rather than in the worm-game repo. Paths below are
+# absolute from the domain root, so anything scoped to a project has
+# to carry that project's prefix.
+
+User-agent: *
+Allow: /
+
+# worm-game: Python tooling and word-list source data. No search
+# value, and crawl budget is better spent on the game itself.
+Disallow: /worm-game/utils/
+Disallow: /worm-game/html/
+Disallow: /worm-game/assets/*.py$
+
+Sitemap: https://soft-shade.github.io/worm-game/sitemap.xml
