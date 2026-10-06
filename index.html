@@ -26,7 +26,9 @@
       h1 { margin: 0 0 0.75rem; font-size: 2rem; font-weight: 600; }
       p  { margin: 0 0 1.5rem; color: #a6adc8; }
       ul { margin: 0; padding: 0; list-style: none; }
-      li { margin-bottom: 1rem; }
+      li { display: flex; gap: 1rem; align-items: flex-start; margin-bottom: 1.25rem; }
+      li .logo { flex: none; border: 0; }
+      li .logo img { display: block; width: 56px; height: 56px; border-radius: 12px; }
       a  { color: #cdd6f4; font-weight: 600; text-decoration: none; border-bottom: 1px solid #6c7086; }
       a:hover { border-bottom-color: #cdd6f4; }
       .desc { display: block; margin-top: 0.25rem; color: #6c7086; font-weight: 400; }
@@ -38,20 +40,26 @@
       <p>Small browser games, made by Softshade and friends.</p>
       <ul>
         <li>
+          <a class="logo" href="/worm-game/" aria-hidden="true" tabindex="-1"><img src="/worm-game/favicon.png" alt=""></a>
+          <div>
           <a href="/worm-game/">Worm Game</a>
           <span class="desc">
             A daily word ladder puzzle. Get from the start word to the goal
             word by adding, removing, or changing one letter at a time,
             keeping every step a valid English word.
           </span>
+          </div>
         </li>
         <li>
+          <a class="logo" href="/plantdiem/" aria-hidden="true" tabindex="-1"><img src="/plantdiem/favicon.svg" alt=""></a>
+          <div>
           <a href="/plantdiem/">Plantdiem</a>
           <span class="desc">
             A daily plant identification game. Study photos of a British
             Columbia plant, fungus or seaweed and work down the tree of life
             from kingdom to species, learning what sets each group apart.
           </span>
+          </div>
         </li>
       </ul>
     </main>
